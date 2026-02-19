@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PayFlow | Faster Cash for Owner-Ops</title>
+    <title>PayFlow | Join the Waitlist</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
@@ -25,7 +25,7 @@
             </p>
         </div>
 
-        <!-- Pains vs Edge -->
+        <!-- Pains vs Edge (same as before) -->
         <div class="grid md:grid-cols-2 gap-8 mb-12">
             <div class="bg-zinc-900/50 border border-red-900/30 rounded-3xl p-8">
                 <h2 class="text-red-400 text-xl font-semibold mb-4">Broker quick-pay sucks</h2>
@@ -46,9 +46,9 @@
             </div>
         </div>
 
-        <!-- Form -->
+        <!-- Form (same fields, updated button) -->
         <div class="bg-white text-zinc-900 rounded-3xl p-10 shadow-2xl">
-            <h2 class="text-3xl font-semibold text-center mb-8">Join the waitlist</h2>
+            <h2 class="text-3xl font-semibold text-center mb-8">Join the PayFlow waitlist</h2>
             <form name="payflow-waitlist" method="POST" data-netlify="true" class="space-y-6">
                 <input type="hidden" name="form-name" value="payflow-waitlist">
                 
@@ -85,19 +85,18 @@
                 </div>
                 
                 <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 transition font-semibold text-xl py-5 rounded-2xl">
-                    Get on the list — first 50 get priority
+                    Join waitlist — first 50 get priority
                 </button>
                 <p class="text-center text-xs text-zinc-500">We’ll email when we launch. Zero spam.</p>
             </form>
         </div>
 
         <div class="text-center mt-10 text-zinc-500 text-sm">
-            PayFlow • No lock-in • We fix paperwork free
+            PayFlow • joinpayflow.com • No lock-in • Free paperwork fixes
         </div>
     </div>
 
     <script>
-        // Optional nice success toast
         document.querySelector('form').addEventListener('submit', () => {
             setTimeout(() => alert("You're in. We'll ping you first when we launch."), 800);
         });
