@@ -14,15 +14,15 @@
     <div class="max-w-2xl mx-auto px-6 py-16">
         <!-- Hero -->
         <div class="text-center mb-12">
-            <h1 class="text-5xl font-bold tracking-tight leading-none mb-6">
+            <div class="inline-block bg-zinc-900 text-emerald-400 text-3xl font-bold tracking-tight px-8 py-3 rounded-3xl mb-6">
                 PayFlow
+            </div>
+            <h1 class="text-6xl font-bold tracking-tight leading-none mb-6">
+                Get Same/Next-Day Cash at Flat 3%
             </h1>
             <h2 class="text-5xl font-bold tracking-tight leading-none mb-6">
-                Get Same/Next-Day Cash at Flat 3%
-            </h2>
-            <h3 class="text-5xl font-bold tracking-tight leading-none mb-6">
                 Quick pay for truckers, <em>not</em> brokers
-            </h3>
+            </h2>
             <p class="text-2xl text-zinc-400 max-w-md mx-auto">
                 Same/next-day 80% advance — flat 3% fee, no surprises.
             </p>
@@ -54,7 +54,7 @@
         <!-- Form -->
         <div class="bg-white text-zinc-900 rounded-3xl p-10 shadow-2xl">
             <h2 class="text-3xl font-semibold text-center mb-8">Join the Waitlist</h2>
-            <p class="text-center text-xs text-zinc-500">Quick note on your info: We only use your name and phone to text you when spots open.<br>No spam, no selling data, ever.</p>
+            <p class="text-center text-xs text-zinc-500">Quick note: We only use your name and phone to text you when spots open.<br>No spam, no selling data, ever.</p>
             <form name="payflow-waitlist" method="POST" action="/thank-you.html" data-netlify="true" class="space-y-6">
                 <input type="hidden" name="form-name" value="payflow-waitlist">
                 
@@ -65,19 +65,8 @@
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-sm font-medium mb-1.5">Email</label>
-                        <input type="email" name="email" class="w-full px-5 py-4 border border-zinc-300 rounded-2xl focus:outline-none focus:border-emerald-600">
-                    </div>
-                    <div>
                         <label class="block text-sm font-medium mb-1.5">Phone</label>
                         <input type="tel" name="phone" required class="w-full px-5 py-4 border border-zinc-300 rounded-2xl focus:outline-none focus:border-emerald-600">
-                    </div>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-sm font-medium mb-1.5">MC# or DOT#</label>
-                        <input type="text" name="mc_dot" placeholder="MC123456 or DOT1234567" class="w-full px-5 py-4 border border-zinc-300 rounded-2xl focus:outline-none focus:border-emerald-600">
                     </div>
                     <div>
                         <label class="block text-sm font-medium mb-1.5">Avg loads/month</label>
@@ -90,7 +79,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 transition font-semibold text-xl py-5 rounded-2xl">
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 transition font-semibold text-xl py-5 rounded-2xl text-white">
                     Text me when spots open
                 </button>
                 <p class="text-center text-xs text-zinc-500">We’ll only text you when spots open — no spam.</p>
